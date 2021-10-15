@@ -14,7 +14,7 @@ class ClassToggler extends React.Component {
 
   render() {
     const { isToggled } = this.state;
-    let title=this.state.isToggled? "ON":"OFF";
+    const title=this.state.isToggled? "ON":"OFF";
     return (
       <button className="btn-hover color-class-btn" onClick={() => this.handleClick()}>{title}</button>
     );
