@@ -1,17 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import HomePage from './components/HomePage/HomePage';
+import LoginForm from './components/LoginForm/LoginForm';
 import './index.css';
-import ClassToggler from './classComponent';
-import FuncToggler from './funcComponent';
 
-function App(props) {
+function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <ClassToggler />
-        <FuncToggler />
-      </header>
+    <div>
+      <LoginForm />
+      <HomePage />
     </div>
   );
 }
