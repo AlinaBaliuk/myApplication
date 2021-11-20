@@ -14,9 +14,9 @@ function App() {
 
 	return (
 		<Provider store={store}>
-				<div className="App">
-					<Company.Provider value={{ nameCompany, updateState: setUser }}>
-						<CompanyInfo />
+			<div className="App">
+				<Company.Provider value={{ nameCompany, updateState: setUser }}>
+					<CompanyInfo />
 				</Company.Provider>
 				<Router>
 					<MainNav />
