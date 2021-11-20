@@ -1,16 +1,12 @@
 import React from "react";
 import { useParams, useRouteMatch, Redirect } from "react-router-dom";
+import { useSelector } from 'react-redux'
+
 
 import SubLink from "./SubLink";
 
-const arrThings = {
-	Women: ["Dresses", "Jeans", "T-shirts", "Shoes"],
-	Men: ["Suit", "Pants", "Sweatshirt", "Shoes"],
-	Kids: ["New Year's Suits", "Summer Suits", "Winter Suits", "Shoes"],
-	Unisex: ["Sneakers", "T-shirts", "Sweater"],
-};
-
 const SubMenu = () => {
+	let arrThings = useSelector(state => state?.main?.clothes)
 	const { item } = useParams();
 	const { url } = useRouteMatch();
 	const models = arrThings[item];

@@ -9,7 +9,7 @@ class Search extends Component {
 			<div>
 				<ResultComponent />
 			</div>
-     	)
+		)
 	}
 }
 
