@@ -16,8 +16,8 @@ function App() {
 		<Provider store={store}>
 				<div className="App">
 					<Company.Provider value={{ nameCompany, updateState: setUser }}>
-								<CompanyInfo />
-						</Company.Provider>
+						<CompanyInfo />
+				</Company.Provider>
 				<Router>
 					<MainNav />
 					<Switch>
@@ -31,8 +31,8 @@ function App() {
 					</Switch>
 				</Router>
 				<Company.Provider value={{ nameCompany, updateState: setUser }}>
-								<ContextCompany />
-						</Company.Provider>
+					<ContextCompany />
+				</Company.Provider>
 			</div>
 		</Provider>
 	);
