@@ -1,9 +1,10 @@
-import React from "react";
+import React from 'react';
 import SubLink from "./SubLink";
-
-const arrClothes = ["Women", "Men", "Kids", "Unisex"];
+import { useSelector } from 'react-redux';
 
 const MainNav = () => {
+	let arrClothes = useSelector(state => state?.main?.menu);
+
 	return (
 		<ul className="main-nav">
 			{arrClothes.map((cloth) => (
